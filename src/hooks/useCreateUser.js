@@ -2,6 +2,8 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import toast from 'react-hot-toast'
 import userService from '../services/userService'
 
+// Post -> useMutation
+
 export function useCreateUser() {
   const qc = useQueryClient()
   return useMutation({
