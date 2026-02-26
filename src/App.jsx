@@ -24,13 +24,7 @@ export default function App() {
           </button>
         ))}
 
-        <div>
-          <div>A</div>
-          <div>
-            <p>Admin</p>
-            <p>admin@co.in</p>
-          </div>
-        </div>
+        
       </aside>
 
       <main>
