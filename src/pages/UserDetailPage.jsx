@@ -44,19 +44,19 @@ export default function UserDetailPage({ userId, onBack }) {
       </div>
 
       <div>
-        <InfoRow label="Email"       value={user.email} />
-        <InfoRow label="Phone"       value={user.phone} />
-        <InfoRow label="Age"         value={user.age} />
-        <InfoRow label="Gender"      value={user.gender} />
-        <InfoRow label="Birth Date"  value={user.birthDate} />
-        <InfoRow label="Blood Group" value={user.bloodGroup} />
-        <InfoRow label="University"  value={user.university} />
-        <InfoRow label="Company"     value={user.company?.name} />
-        <InfoRow label="Role"        value={user.company?.title} />
-        <InfoRow label="Department"  value={user.company?.department} />
-        <InfoRow label="City"        value={user.address ? `${user.address.city}, ${user.address.country}` : null} />
-        <InfoRow label="IP Address"  value={user.ip} />
-        <InfoRow label="MAC"         value={user.macAddress} />
+        <InfoRow label="Email: "      value={user.email} />
+        <InfoRow label="Phone: "       value={user.phone} />
+        <InfoRow label="Age: "         value={user.age} />
+        <InfoRow label="Gender: "      value={user.gender} />
+        <InfoRow label="Birth Date: "  value={user.birthDate} />
+        <InfoRow label="Blood Group: " value={user.bloodGroup} />
+        <InfoRow label="University: "  value={user.university} />
+        <InfoRow label="Company: "     value={user.company?.name} />
+        <InfoRow label="Role: "        value={user.company?.title} />
+        <InfoRow label="Department: "  value={user.company?.department} />
+        <InfoRow label="City: "        value={user.address ? `${user.address.city}, ${user.address.country}` : null} />
+        <InfoRow label="IP Address: "  value={user.ip} />
+        <InfoRow label="MAC: "         value={user.macAddress} />
       </div>
 
       <Modal open={editOpen} onClose={() => setEditOpen(false)} title="Edit Profile">
